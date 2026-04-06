@@ -1,0 +1,72 @@
+[0.006s] Invoking command in '/media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /media/aryan-k-k/2TB_KK/CSE_Recruitment/src/mini_model_description -DCMAKE_INSTALL_PREFIX=/media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description
+[0.045s] -- The C compiler identification is GNU 13.3.0
+[0.081s] -- The CXX compiler identification is GNU 13.3.0
+[0.094s] -- Detecting C compiler ABI info
+[0.176s] -- Detecting C compiler ABI info - done
+[0.182s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.182s] -- Detecting C compile features
+[0.182s] -- Detecting C compile features - done
+[0.190s] -- Detecting CXX compiler ABI info
+[0.261s] -- Detecting CXX compiler ABI info - done
+[0.267s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.267s] -- Detecting CXX compile features
+[0.267s] -- Detecting CXX compile features - done
+[0.269s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.366s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.490s] -- Configuring done (0.5s)
+[0.491s] -- Generating done (0.0s)
+[0.492s] -- Build files have been written to: /media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description
+[0.496s] Invoked command in '/media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /media/aryan-k-k/2TB_KK/CSE_Recruitment/src/mini_model_description -DCMAKE_INSTALL_PREFIX=/media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description
+[0.497s] Invoking command in '/media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description -- -j20 -l20
+[0.528s] Invoked command in '/media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description -- -j20 -l20
+[0.534s] Invoking command in '/media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description
+[0.540s] -- Install configuration: ""
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/config
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/config/rover_controllers.yaml
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/launch
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/launch/simulation.launch.py
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/base_link.stl
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__10__1.stl
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__11__1.stl
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__12__1.stl
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__13__1.stl
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__14__1.stl
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__1__1.stl
+[0.540s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__2__1.stl
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__3__1.stl
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__4__1.stl
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__5__1.stl
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__6__1.stl
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__7__1.stl
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__8__1.stl
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/component__9__1.stl
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/meshes/meshes
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/urdf
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/urdf/materials.xacro
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/urdf/mini_model.gazebo
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/urdf/mini_model.ignition.gazebo
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/urdf/mini_model.trans
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/urdf/mini_model.xacro
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/urdf/mini_model_flexible.xacro
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/urdf/mini_model_ignition.xacro
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/urdf/sensors.gazebo
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/urdf/sensors.xacro
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/rviz
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/rviz/rover.rviz
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/ament_index/resource_index/package_run_dependencies/mini_model_description
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/ament_index/resource_index/parent_prefix_path/mini_model_description
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/environment/ament_prefix_path.sh
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/environment/ament_prefix_path.dsv
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/environment/path.sh
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/environment/path.dsv
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/local_setup.bash
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/local_setup.sh
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/local_setup.zsh
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/local_setup.dsv
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/package.dsv
+[0.541s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/ament_index/resource_index/packages/mini_model_description
+[0.542s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/cmake/mini_model_descriptionConfig.cmake
+[0.542s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/cmake/mini_model_descriptionConfig-version.cmake
+[0.542s] -- Installing: /media/aryan-k-k/2TB_KK/CSE_Recruitment/install/mini_model_description/share/mini_model_description/package.xml
+[0.542s] Invoked command in '/media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /media/aryan-k-k/2TB_KK/CSE_Recruitment/build/mini_model_description

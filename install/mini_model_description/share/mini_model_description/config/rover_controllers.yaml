@@ -1,0 +1,35 @@
+controller_manager:
+  ros__parameters:
+    use_sim_time: true
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+
+diff_drive_controller:
+  ros__parameters:
+    use_sim_time: true
+    left_wheel_names: ["Revolute 36", "Revolute 37", "Revolute 38"]
+    right_wheel_names: ["Revolute 29", "Revolute 30", "Revolute 31"]
+    
+    wheel_separation: 0.5
+    wheel_radius: 0.1
+    
+    publish_rate: 50.0
+    
+    use_stamped_vel: false
+    cmd_vel_timeout: 0.5
+
+    # TF publication
+    base_frame_id: "base_link"
+    odom_frame_id: "odom"
+    enable_odom_tf: true
+    
+    # Velocity limits
+    linear.x.has_velocity_limits: true
+    linear.x.max_velocity: 1.0
+    angular.z.has_velocity_limits: true
+    angular.z.max_velocity: 1.0

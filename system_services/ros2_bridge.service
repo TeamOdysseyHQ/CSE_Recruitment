@@ -1,0 +1,14 @@
+[Unit]
+Description=Rover ROS 2 MicroROS Bridge Stub Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash /media/aryan-k-k/2TB_KK/CSE_Recruitment/src/ros2_bridge_stub.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

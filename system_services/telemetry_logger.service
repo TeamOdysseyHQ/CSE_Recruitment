@@ -1,0 +1,14 @@
+[Unit]
+Description=Rover Telemetry Dashboard Logging Service
+Requires=ros2_bridge.service
+After=ros2_bridge.service network-online.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/python3 /media/aryan-k-k/2TB_KK/CSE_Recruitment/src/telemetry_logger.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE Recruitment Log - Nithilan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            color: #1f2421;
+            background: #f5f2e9;
+            font-family: "Space Grotesk", sans-serif;
+            line-height: 1.6;
+        }
+
+        .wrap {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 0 0 30px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            margin: 30px 0 15px;
+            border-bottom: 2px solid #0f6a7c;
+            padding-bottom: 8px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #0f6a7c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrap">
+        <h1>Category 1 Report - Nithilan</h1>
+
+        <section>
+            <h2>What I Built</h2>
+            <p>I completed the Category 1 assignment, including the advanced task, and got it working on the physical
+                Teensy board in the rover.</p>
+        </section>
+        <section>
+            <h2>Success</h2>
+            <figure style="margin: 15px 0;">
+                <img src="./output/success.png" alt="Task 1 of getting the GPD coordinates and parsing teh NMEA value"
+                    style="max-width: 80%; height: auto;" />
+                <figcaption style="font-size: 0.9rem; color: #666; margin-top: 5px;">Task 1 of getting the GPD
+                    coordinates and parsing teh NMEA value</figcaption>
+            </figure>
+            <figure style="margin: 15px 0;">
+                <img src="./output/success-micro-ros.png"
+                    alt="Advanced task of publishing gps values to /gps/fix ROS2 topic"
+                    style="max-width: 80%; height: auto;" />
+                <figcaption style="font-size: 0.9rem; color: #666; margin-top: 5px;">Advanced task of publishing gps
+                    values to /gps/fix ROS2 topic</figcaption>
+            </figure>
+            P.S: as for eye witnesses, Ekansh can confirm that it worked on the physical board.
+        </section>
+
+
+        <section>
+            <h2>Why I Chose Arduino SDK</h2>
+            <p>Zephyr RTOS seemed like overkill for what was needed, and I still had the choice of FreeRTOS if needed.</p>
+        </section>
+
+        <section>
+            <h2>Picking LwGPS</h2>
+            <p>I went with LwGPS over TinyGPS++ because I wanted something cross-platform. Keeps the code portable to
+                other microcontrollers or SDKs down the line, rather than being locked into Arduino.</p>
+        </section>
+
+        <section>
+            <h2>Note on AI usage</h2>
+            <p>
+                basically all the code I wrote for this assignment was generated with inline copilot, which I guess puts it in the "vibe-coded" category? altough the gps code was so simple that I'd consider it boilerplate. While I can't recite how to use the library from memory, I do remember understanding exactly what each line did as lwGPS had really good documentation and examples.
+            </p>
+            <p>
+                for the ROS2 publishing part, full transparanecy, it was completely vibe coded as I did not have the time to learn micro-ros syntax in a day unfortunately, I was quite busy during the weeked. I was still able to debug some issues like bad Serial configuration and wrong topic names.
+            </p>
+        </section>
+
+        <section>
+            <h2>reason behind my choices</h2>
+            <p>
+                while I do regret not being able to follow the rule 1.2 "In Extension to Rules 1.1, every line of code must be inferred in accordance to your report." I prioritize getting tasks working first, then optimizing and learning afterward. While this meant sacrificing some learning opportunities for this assignment, I found that debugging and iterating on the code forced me to understand the fundamentals anyway. Learning the full intricacies can always come later, unlike deadlines.
+            </p>
+        </section>
+        <section>
+            <h2>Resources used</h2>
+            <ul>
+                <li><a href="https://www.pjrc.com/store/teensy41.html">Teensy 4.1 serial port info</a> - to figure out the serial ports on the board</li>
+                <li><a href="https://github.com/MaJerle/lwgps">LwGPS documentation</a> beacuse lwGPS</li>
+                <li><a href="https://en.wikipedia.org/wiki/NMEA_0183">NMEA 0183 standard</a> - first time learning about NMEA</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

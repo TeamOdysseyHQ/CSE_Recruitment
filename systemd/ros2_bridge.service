@@ -1,0 +1,11 @@
+[Unit]
+Description=ROS2 Bridge Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/deepti/CSE_Recruitment/scripts/ros2_bridge.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

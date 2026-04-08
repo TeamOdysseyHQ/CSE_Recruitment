@@ -145,8 +145,7 @@ Set up and run a basic rover simulation workflow using ROS 2 and Gazebo.
 ## Core Tasks (Mandatory to be Done for Everyone)
 1. Spawn the provided rover model in Gazebo and verify that the robot appears correctly.
 2. Configure and run a differential drive controller using `ros2_control`.
-3. Publish odometry and TF transforms correctly so rover motion is reflected
-   consistently in the frame tree.
+3. Publish odometry and TF transforms correctly so rover motion is reflected consistently in the frame tree.
 
 **Make sure to refer the src folder which has the  mini_model_description package containing the meshes and urdf folder with their respective files ,  you can put all your launch scripts in this mini_model_description folder**
 

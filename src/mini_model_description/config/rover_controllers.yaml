@@ -1,0 +1,60 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    diff_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+
+
+diff_drive_controller:
+  ros__parameters:
+    # Right-side driven wheel joints
+    right_wheel_names:
+      - "Revolute 29"
+      - "Revolute 30"
+      - "Revolute 31"
+
+    # Left-side driven wheel joints
+    left_wheel_names:
+      - "Revolute 36"
+      - "Revolute 37"
+      - "Revolute 38"
+
+    # Tune these to your CAD/URDF dimensions if odom scale is off
+    wheels_per_side: 3
+    wheel_separation: 0.58
+    wheel_radius: 0.155
+    left_wheel_radius_multiplier: -1.0
+    publish_limited_velocity: true
+
+    publish_rate: 50.0
+    use_stamped_vel: true
+    cmd_vel_timeout: 0.5
+
+    base_frame_id: base_link
+    odom_frame_id: odom
+    enable_odom_tf: true
+
+    open_loop: false
+    position_feedback: true
+
+    linear:
+      x:
+        has_velocity_limits: true
+        max_velocity: 1.5
+        min_velocity: -1.5
+        has_acceleration_limits: true
+        max_acceleration: 1.5
+        min_acceleration: -1.5
+
+    angular:
+      z:
+        has_velocity_limits: true
+        max_velocity: 2.0
+        min_velocity: -2.0
+        has_acceleration_limits: true
+        max_acceleration: 2.0
+        min_acceleration: -2.0

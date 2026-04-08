@@ -2,7 +2,7 @@
 <robot name="mini_model" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
 <material name="silver">
-  <color rgba="0.700 0.700 0.700 1.000"/>
+  <color rgba="0.220 0.420 0.780 1.000"/>
 </material>
 
 <!-- Sensor Materials -->

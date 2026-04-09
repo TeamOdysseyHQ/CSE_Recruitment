@@ -1,0 +1,12 @@
+[Unit]
+Description=Rover System (Bridge + Telemetry)
+After=network-online.target ros2_bridge.service telemetry_logger.service
+Wants=network-online.target ros2_bridge.service telemetry_logger.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/true
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

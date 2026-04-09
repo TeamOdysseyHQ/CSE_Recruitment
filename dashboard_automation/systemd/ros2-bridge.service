@@ -1,0 +1,17 @@
+[Unit]
+Description=ROS 2 Bridge Service
+# Must only start after network is fully online
+Requires=network-online.target
+After=network-online.target
+# Bind to the custom ground control target
+PartOf=rover-ground-control.target
+
+[Service]
+Type=simple
+User=rover
+ExecStart=/usr/bin/python3 /opt/rover/bin/ros2_bridge.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=rover-ground-control.target

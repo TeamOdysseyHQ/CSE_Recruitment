@@ -1,0 +1,8 @@
+[Unit]
+Description=Rover Ground Control System Target
+Requires=network-online.target
+After=network-online.target
+Wants=ros2-bridge.service telemetry-logger.service
+
+[Install]
+WantedBy=multi-user.target

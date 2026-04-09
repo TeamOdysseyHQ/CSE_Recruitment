@@ -1,0 +1,12 @@
+[Unit]
+Description=Telemetry Logging Service
+After=ros_service.service
+Requires=ros_service.service
+
+[Service]
+ExecStart=/home/laavya/rover_services/telemetry_service.sh
+Restart=always
+User=laavya
+
+[Install]
+WantedBy=multi-user.target

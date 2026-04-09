@@ -436,7 +436,7 @@
 <!-- ROS 2 Control Hardware Interface -->
 <ros2_control name="GazeboSimSystem" type="system">
   <hardware>
-    <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
   </hardware>
   
   <!-- PASSIVE SUSPENSION JOINTS (State Interface Only) -->
@@ -597,8 +597,8 @@
 
 <!-- Gazebo ROS 2 Control Plugin -->
 <gazebo>
-  <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-    <parameters>$(find mini_model_control)/config/rover_controllers.yaml</parameters>
+  <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+    <parameters>$(find mini_model_description)/config/rover_controllers.yaml</parameters>
     <controller_manager_name>controller_manager</controller_manager_name>
     <hold_joints>true</hold_joints>
     <position_proportional_gain>0.1</position_proportional_gain>

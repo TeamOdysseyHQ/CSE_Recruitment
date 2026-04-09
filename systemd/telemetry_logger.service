@@ -1,0 +1,12 @@
+[Unit]
+Description=Telemetry Logger Service
+After=network-online.target ros2_bridge.service
+Requires=ros2_bridge.service
+
+[Service]
+Environment="HOME=/home/deepti"
+ExecStart=/bin/bash -lc "/home/deepti/CSE_Recruitment/scripts/telemetry_logger.sh"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

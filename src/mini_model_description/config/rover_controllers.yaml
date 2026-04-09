@@ -1,0 +1,33 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    use_sim_time: true
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    velocity_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+    position_controller:
+      type: position_controllers/JointGroupPositionController
+
+velocity_controller:
+  ros__parameters:
+    joints:
+      - "Revolute 29"
+      - "Revolute 30"
+      - "Revolute 31"
+      - "Revolute 36"
+      - "Revolute 37"
+      - "Revolute 38"
+    interface_name: velocity
+
+position_controller:
+  ros__parameters:
+    joints:
+      - "Revolute 27"
+      - "Revolute 28"
+      - "Revolute 34"
+      - "Revolute 35"
+    interface_name: position

@@ -1,0 +1,20 @@
+[Unit]
+Description=Telemetry Logging Service
+# Must only start after network is fully online
+Requires=network-online.target
+After=network-online.target
+# Dependency Ordering: Requires ROS 2 bridge to be running
+Requires=ros2-bridge.service
+After=ros2-bridge.service
+# Bind to the custom ground control target
+PartOf=rover-ground-control.target
+
+[Service]
+Type=simple
+User=rover
+ExecStart=/usr/bin/python3 /opt/rover/bin/telemetry_logger.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=rover-ground-control.target

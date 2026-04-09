@@ -1,0 +1,527 @@
+<?xml version="1.0" ?>
+<robot name="mini_model" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- Materials -->
+<xacro:include filename="$(find mini_model_description)/urdf/materials.xacro" />
+
+<!-- Gazebo Classic material/friction properties -->
+<xacro:include filename="$(find mini_model_description)/urdf/mini_model.gazebo" />
+
+<!-- NOTE: sensors.xacro and sensors.gazebo excluded -->
+<!-- They use Ignition Fortress plugins incompatible with Gazebo Classic 11 -->
+<link name="base_footprint"/>
+
+<joint name="base_joint" type="fixed">
+  <parent link="base_footprint"/>
+  <child link="base_link"/>
+  <origin xyz="0 0 0.15" rpy="1.5708 0 0"/>
+</joint>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <mass value="628.0"/>
+    <inertia ixx="15.176667" iyy="46.576667" izz="35.586667" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__8__1">
+  <inertial>
+    <origin xyz="0.1134912204829699 -0.05030777295699913 0.029954747066772536" rpy="0 0 0"/>
+    <mass value="5.449702499230522"/>
+    <inertia ixx="0.013083" iyy="0.270388" izz="0.283097" ixy="0.036122" iyz="1.2e-05" ixz="-2.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.25" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.25" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__1__1">
+  <inertial>
+    <origin xyz="0.014564589996318489 -0.07826500014971428 0.010000000000000009" rpy="0 0 0"/>
+    <mass value="3.923134667678356"/>
+    <inertia ixx="0.016852" iyy="0.089659" izz="0.106249" ixy="0.027919" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.25 0.066987 -0.29" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="0.25 0.066987 -0.29" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__2__1">
+  <inertial>
+    <origin xyz="8.326672684688674e-16 -0.07524710992668415 0.0" rpy="0 0 0"/>
+    <mass value="0.9442697396325618"/>
+    <inertia ixx="0.00182" iyy="0.000154" izz="0.001911" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.5 0.149321 -0.3" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="0.5 0.149321 -0.3" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__3__1">
+  <inertial>
+    <origin xyz="-1.3322676295501878e-15 -0.07524710992668368 0.0" rpy="0 0 0"/>
+    <mass value="0.9442697396325564"/>
+    <inertia ixx="0.00182" iyy="0.000154" izz="0.001911" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.5 0.149321 -0.28" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.5 0.149321 -0.28" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__4__1">
+  <inertial>
+    <origin xyz="8.326672684688674e-16 4.037844391069356e-07 0.050132954214166414" rpy="0 0 0"/>
+    <mass value="24.72411519366146"/>
+    <inertia ixx="0.082388" iyy="0.082388" izz="0.123329" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.5 0.283975 -0.31" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="0.5 0.283975 -0.31" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__5__1">
+  <inertial>
+    <origin xyz="-3.003187247395517e-16 4.0378443955102483e-07 0.050132954214166414" rpy="0 0 0"/>
+    <mass value="24.724115193661465"/>
+    <inertia ixx="0.082388" iyy="0.082388" izz="0.123329" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.283975 -0.31" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.283975 -0.31" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__6__1">
+  <inertial>
+    <origin xyz="-1.4432899320127035e-15 4.037844399396029e-07 0.05013295421416647" rpy="0 0 0"/>
+    <mass value="24.72411519366146"/>
+    <inertia ixx="0.082388" iyy="0.082388" izz="0.123329" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.5 0.283975 -0.29" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.5 0.283975 -0.29" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__7__1">
+  <inertial>
+    <origin xyz="0.11349122048296997 -0.0503077729569992 -0.02995474706677259" rpy="0 0 0"/>
+    <mass value="5.449702499230521"/>
+    <inertia ixx="0.013083" iyy="0.270388" izz="0.283097" ixy="0.036122" iyz="-1.2e-05" ixz="2.8e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 0.25" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 0.25" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__9__1">
+  <inertial>
+    <origin xyz="0.014564589996318461 -0.07826500014971409 -0.010000000000000064" rpy="0 0 0"/>
+    <mass value="3.9231346676783514"/>
+    <inertia ixx="0.016852" iyy="0.089659" izz="0.106249" ixy="0.027919" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.25 0.066987 0.29" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="0.25 0.066987 0.29" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__11__1">
+  <inertial>
+    <origin xyz="-1.3322676295501878e-15 -0.07524710992668368 0.0" rpy="0 0 0"/>
+    <mass value="0.9442697396325564"/>
+    <inertia ixx="0.00182" iyy="0.000154" izz="0.001911" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.5 0.149321 0.28" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__11__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.5 0.149321 0.28" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__11__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__10__1">
+  <inertial>
+    <origin xyz="8.326672684688674e-16 -0.07524710992668415 0.0" rpy="0 0 0"/>
+    <mass value="0.9442697396325618"/>
+    <inertia ixx="0.00182" iyy="0.000154" izz="0.001911" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.5 0.149321 0.3" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__10__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="0.5 0.149321 0.3" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__10__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__14__1">
+  <inertial>
+    <origin xyz="6.772360450213455e-15 4.037844399396029e-07 -0.05013295421416647" rpy="0 0 0"/>
+    <mass value="24.72411519366147"/>
+    <inertia ixx="0.082388" iyy="0.082388" izz="0.123329" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.5 0.283975 0.29" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__14__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.5 0.283975 0.29" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__14__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__13__1">
+  <inertial>
+    <origin xyz="7.866040444139796e-15 4.03784439606536e-07 -0.050132954214166414" rpy="0 0 0"/>
+    <mass value="24.724115193661465"/>
+    <inertia ixx="0.082388" iyy="0.082388" izz="0.123329" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.283975 0.31" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__13__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.283975 0.31" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__13__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="component__12__1">
+  <inertial>
+    <origin xyz="9.048317650695026e-15 4.0378443905142447e-07 -0.050132954214166525" rpy="0 0 0"/>
+    <mass value="24.72411519366147"/>
+    <inertia ixx="0.082388" iyy="0.082388" izz="0.123329" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.5 0.283975 0.31" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__12__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+  <collision>
+    <origin xyz="0.5 0.283975 0.31" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find mini_model_description)/meshes/component__12__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<!-- JOINTS -->
+<joint name="Revolute_25" type="revolute">
+  <origin xyz="0.0 0.0 0.25" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="component__8__1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="0.523599" lower="-0.523599" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute_26" type="revolute">
+  <origin xyz="-0.25 -0.066987 0.04" rpy="0 0 0"/>
+  <parent link="component__8__1"/>
+  <child link="component__1__1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="0.523599" lower="-0.523599" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute_27" type="revolute">
+  <origin xyz="-0.25 -0.082334 0.01" rpy="0 0 0"/>
+  <parent link="component__1__1"/>
+  <child link="component__2__1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="500" velocity="100"/>
+  <dynamics damping="50.0" friction="3.5"/>
+</joint>
+
+<joint name="Revolute_28" type="revolute">
+  <origin xyz="0.5 -0.149321 0.03" rpy="0 0 0"/>
+  <parent link="component__8__1"/>
+  <child link="component__3__1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="500" velocity="100"/>
+  <dynamics damping="50.0" friction="3.5"/>
+</joint>
+
+<joint name="Revolute_29" type="continuous">
+  <origin xyz="0.0 -0.134654 0.01" rpy="0 0 0"/>
+  <parent link="component__2__1"/>
+  <child link="component__4__1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute_30" type="continuous">
+  <origin xyz="0.25 -0.216988 0.02" rpy="0 0 0"/>
+  <parent link="component__1__1"/>
+  <child link="component__5__1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute_31" type="continuous">
+  <origin xyz="0.0 -0.134654 0.01" rpy="0 0 0"/>
+  <parent link="component__3__1"/>
+  <child link="component__6__1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute_32" type="revolute">
+  <origin xyz="0.0 0.0 -0.25" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="component__7__1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="0.523599" lower="-0.523599" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute_33" type="revolute">
+  <origin xyz="-0.25 -0.066987 -0.04" rpy="0 0 0"/>
+  <parent link="component__7__1"/>
+  <child link="component__9__1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="0.523599" lower="-0.523599" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Revolute_34" type="revolute">
+  <origin xyz="0.5 -0.149321 -0.03" rpy="0 0 0"/>
+  <parent link="component__7__1"/>
+  <child link="component__11__1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="500" velocity="100"/>
+  <dynamics damping="50.0" friction="3.5"/>
+</joint>
+
+<joint name="Revolute_35" type="revolute">
+  <origin xyz="-0.25 -0.082334 -0.01" rpy="0 0 0"/>
+  <parent link="component__9__1"/>
+  <child link="component__10__1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="0.785398" lower="-0.785398" effort="500" velocity="100"/>
+  <dynamics damping="50.0" friction="3.5"/>
+</joint>
+
+<joint name="Revolute_36" type="continuous">
+  <origin xyz="0.0 -0.134654 -0.01" rpy="0 0 0"/>
+  <parent link="component__11__1"/>
+  <child link="component__14__1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="Revolute_37" type="continuous">
+  <origin xyz="0.25 -0.216988 -0.02" rpy="0 0 0"/>
+  <parent link="component__9__1"/>
+  <child link="component__13__1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="Revolute_38" type="continuous">
+  <origin xyz="0.0 -0.134654 -0.01" rpy="0 0 0"/>
+  <parent link="component__10__1"/>
+  <child link="component__12__1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<!-- ROS 2 Control Hardware Interface - Gazebo Classic -->
+<ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+
+  <joint name="Revolute_25">
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="Revolute_26">
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="Revolute_32">
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="Revolute_33">
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+
+  <joint name="Revolute_29">
+    <command_interface name="velocity">
+      <param name="min">-50.0</param>
+      <param name="max">50.0</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="Revolute_30">
+    <command_interface name="velocity">
+      <param name="min">-50.0</param>
+      <param name="max">50.0</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="Revolute_31">
+    <command_interface name="velocity">
+      <param name="min">-50.0</param>
+      <param name="max">50.0</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="Revolute_36">
+    <command_interface name="velocity">
+      <param name="min">-50.0</param>
+      <param name="max">50.0</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="Revolute_37">
+    <command_interface name="velocity">
+      <param name="min">-50.0</param>
+      <param name="max">50.0</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="Revolute_38">
+    <command_interface name="velocity">
+      <param name="min">-50.0</param>
+      <param name="max">50.0</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+</ros2_control>
+
+<!-- Gazebo Classic ros2_control plugin -->
+<gazebo>
+  <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+    <parameters>$(find mini_model_control)/config/rover_controllers.yaml</parameters>
+    <robot_param_node>robot_state_publisher</robot_param_node>
+  </plugin>
+</gazebo>
+
+</robot>

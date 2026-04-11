@@ -47,3 +47,6 @@ ros2 launch mini_model_description display.launch.py
 
 ### TF Tree
 ![TF Tree](docs/tf_tree.png)
+
+### Rover in RViz with TF
+![RViz](docs/rviz_rover.png)

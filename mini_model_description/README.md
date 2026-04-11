@@ -2,7 +2,6 @@
 
 ROS 2 package for the mini rover (Category 2 submission)
 
-## What I Did
 
 ### Gazebo Simulation
 Got the rover spawning in Gazebo Classic (v11) using a launch file. Took a while
